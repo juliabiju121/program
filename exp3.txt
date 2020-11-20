@@ -1,0 +1,18 @@
+﻿CREATE TABLE employeedetails(
+    empid varchar(4),
+    Firstname  VARCHAR(10),
+    Lastname VARCHAR(10),
+    location VARCHAR(10),
+    sex VARCHAR(1)
+    );
+ 
+    INSERT INTO employeedetails 
+    VALUES ('G1','Sanjay','Saurav','Banglore','M'),
+    ('G2','diya','Shekhar','New Delhi','M'),
+    ('G1','Niki','Sharma','Kerala','F');
+    
+    SELECT * FROM Employee
+    WHERE empid IN (SELECT empid FROM employeedetails);
+    
+     SELECT * FROM Employee
+    WHERE empid IN (SELECT empid FROM employeedetails);
